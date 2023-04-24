@@ -14,14 +14,12 @@ body {
 }
 
 article {
-  justify-content: center;
   align-items: center;
   display: flex;
-  flex-flow: column;
   min-height: 100vh;
 }
 
-h1, p {
+h1 {
   font-size: 1.236em;
   font-weight: unset;
   margin: auto;
@@ -36,6 +34,10 @@ ul {
 }
 
 @media (orientation: portrait) {
+  article {
+    flex-flow: column;
+  }
+
   ul {
     line-height: 1.618;
     writing-mode: sideways-rl;
